@@ -24,7 +24,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: waws-prod-ln1-073.ftp.azurewebsites.windows.net
-          protocol: ftps
+          protocol: ftp
           username: stevenhollidge\$stevenhollidge
           password: ${{ secrets.FTPS_PASSWORD }}
           local-dir: ./source/
+          server-dir: /site/wwwroot/
