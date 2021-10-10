@@ -28,4 +28,4 @@ jobs:
           username: stevenhollidge\$stevenhollidge
           password: ${{ secrets.FTPS_PASSWORD }}
           local-dir: ./source/
-          server-dir: /site/wwwroot/
+          server-dir: ./site/wwwroot/
